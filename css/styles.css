@@ -1,0 +1,55 @@
+:root{
+    --title-color: #F5F5F5;
+}
+
+body {
+    margin: 0;
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;   
+}
+
+.footer{
+    background-color: #2C2C2C;
+}
