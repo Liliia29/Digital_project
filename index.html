@@ -92,16 +92,17 @@
             />
             <img
               width="270px"
-              height="140px"
-              src="./images/coompany.jpg"
-              alt="glass building"
-            />
-            <img
-              width="270px"
               height="345px"
               src="./images/companyy.jpg"
               alt="glass building"
             />
+            <img
+              width="270px"
+              height="140px"
+              src="./images/coompany.jpg"
+              alt="glass building"
+            />
+            
           </div>
           <div class="component-text">
             <h2 class="company-title">О компании</h2>
@@ -191,21 +192,22 @@
         <div class="container">
           <h2 class="company-title tasks-title">Связаться с нами</h2>
           <div class="profect-section">
-            <form action="">
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <input type="text" />
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+            <form class="form-field" >
+              <input class="form-input" type="text" placeholder="Имя" for="name"/>
+              <input class="form-input" type="text" placeholder="Номер телефона" for="tel"/>
+              <input class="form-input" type="text" placeholder="E-mail" for="email"/>
+              <input class="form-input" type="text" placeholder="Интересующий товар/услуга"/>
+              <textarea class="form-input textarea" placeholder="Сообщение" name="" id="" cols="30" rows="10"></textarea>
             </form>
+            <button class="profect-button">
+              ВОТПРАВИТЬ
+              <svg class="profect-button-svg" width="18px" height="8px">
+                <use href="./images/symbol-defs.svg#icon-ico-shape"></use>
+              </svg>
+            </button>
           </div>
 
-          <button class="profect-button">
-            ВОТПРАВИТЬ
-            <svg class="profect-button-svg" width="18px" height="8px">
-              <use href="./images/symbol-defs.svg#icon-ico-shape"></use>
-            </svg>
-          </button>
+          
           <img src="./images/contact.jpg" alt="contact" />
         </div>
       </section>
