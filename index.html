@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROJECT</title>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/tt-hoves-pro-trial" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -30,37 +33,40 @@
     </header>
 
     <main>
-      <section>
+      <section class="profect-section-container">
         <div class="container profect-section">
             <div>
-          <h1 class="headline-title">PROJECT<span>HOME</span></h1>
-          <button>
-            <svg class="" width="53px" height="53px"><use href="./images/symbol-defs.svg#icon-ico-shape-1"></use></svg>
+          <h1 class="headline-title">PROJECT
+            <span class="headline-title-span">HOME</span></h1>
+
+          <button class="svg-arrow-button">
+            <svg class="svg-arrow" width="24px" height="24px"><use href="./images/symbol-defs.svg#icon-ico-shape-1"></use></svg>
           </button>
-          <button>
-            <svg class="" width="53px" height="53px"><use href="./images/symbol-defs.svg#icon-ico-shape"></use></svg>
+          <button class="svg-arrow-button">
+            <svg class="svg-arrow" width="24px" height="24px"><use href="./images/symbol-defs.svg#icon-ico-shape"></use></svg>
           </button>
-          <p class="pages">1</p><span>/</span><p>2</p>
+          
+          <div class="pages-container"><p class="pages">01</p><span class="pages">/</span><p class="pages">02</p></div>
         </div>
          <div>
           <img class="img-headline" src="./images/headline.jpg" alt="building" width="770px" height="829px"/>
           <button class="headline-button">
-            ВЗГЛЯНУТЬ <svg class="" width="24px" height="24px"><use href="./images/symbol-defs.svg#icon-ico-shape"></use></svg>
+            ВЗГЛЯНУТЬ <svg class="headline-button-svg" width="18px" height="8px"><use href="./images/symbol-defs.svg#icon-ico-shape"></use></svg>
           </button>
         </div>
     </div>
       </section>
 
-      <section>
-        <div class="container profect-section">
-        <div>
-          <img src="./images/company.jpg" alt="glass building" />
-          <img src="./images/coompany.jpg" alt="glass building" />
-          <img src="./images/companyy.jpg" alt="glass building" />
+      <section class="company-section-container">
+        <div class="container company-section">
+        <div class="container-img">
+          <img width="270px" height="265px" src="./images/company.jpg" alt="glass building" />
+          <img width="270px" height="140px" src="./images/coompany.jpg" alt="glass building" />
+          <img  width="270px" height="345px" src="./images/companyy.jpg" alt="glass building" />
         </div>
-        <div>
-          <h2>О компании</h2>
-          <p>
+        <div class="component-text">
+          <h2 class="company-title">О компании</h2>
+          <p class="company-text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -69,31 +75,34 @@
             remaining essentially unchanged.
           </p>
           <button class="headline-button">
-            ЧИТАТЬ <svg class="" width="24px" height="24px"><use href="./images/symbol-defs.svg#icon-ico-shape"></use></svg>
+            ЧИТАТЬ <svg class="headline-button-svg" width="18px" height="8px"><use href="./images/symbol-defs.svg#icon-ico-shape"></use></svg>
           </button>
         </div>
     </div>
       </section>
 
-      <section>
-        <div class="container profect-section">
-        <h2>Основные задачи</h2>
-        <span>1</span>
-        <p>
-          Создание комфортных условий и повышение качества обслуживания клиентов
-        </p>
-        <span>2</span>
-        <p>
-          Постоянно совершенствовать качество предоставляемых услуг путем
-          обучения персонала, закупки нового оборудования и усиленной рекламы на
-          рынке
-        </p>
+      <section class="company-section-container">
+        <div class="container">
+        <h2 class="company-title tasks-title">Основные задачи</h2>
+        <div class="tasks-section">
+          <span class="tasks-one">1</span>
+          <p class="tasks-text">
+            Создание комфортных условий и повышение качества обслуживания клиентов
+          </p>
+          <span class="tasks-two">2</span>
+          <p class="tasks-text-two" >
+            Постоянно совершенствовать качество предоставляемых услуг путем
+            обучения персонала, закупки нового оборудования и усиленной рекламы на
+            рынке
+          </p>
+        </div>
+        
     </div>
       </section>
 
-      <section>
+      <section class="company-section-container">
         <div class="container profect-section">
-        <h2>Наши проекты</h2>
+        <h2 class="company-title tasks-title">Наши проекты</h2>
         <img src="./images/project.jpg" alt="building">
         <img src="./images/project2.jpg" alt="building">
         <img src="./images/project3.jpg" alt="building">

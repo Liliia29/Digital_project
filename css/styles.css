@@ -2,6 +2,26 @@
     --title-color: #F5F5F5;
 }
 
+@font-face {
+    font-weight: 700;
+    font-family: TT Hoves Bold;
+    src: url("../fonts/TT\ Hoves\ Pro\ Trial\ Bold.ttf");
+  } 
+
+  @font-face {
+    font-weight: 400;
+    font-family: TT Hoves Regular;
+    src: url("../fonts/TT\ Hoves\ Pro\ Trial\ Regular.ttf");
+  }
+
+  @font-face {
+    font-weight: 300;
+    font-family: TT Hoves;
+    src: url("../fonts/TT\ Hoves\ Pro\ Trial\ Light.ttf");
+  }
+
+  /* font-family: 'SF Pro Display', sans-serif;
+  font-family: 'TT Hoves Pro', sans-serif; */
 body {
     margin: 0;
     
@@ -41,7 +61,7 @@ img {
   
   display: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 
@@ -70,15 +90,22 @@ img {
 }
 
 .site-nav a{
-    font-weight: 500;
+    font-family: 'TT Hoves Regular', sans-serif;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
+    
     text-decoration: none;
     display: block;
     padding-top: 45px;
     padding-bottom: 26px;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-size: 12px;
+    font-style: normal;
+    line-height: 12px; 
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
 }
 
 .site-nav li:not(:last-child) {
@@ -98,16 +125,231 @@ img {
 }
 
 .headline-title{
+    font-family: 'TT Hoves', sans-serif;
     margin-bottom: 90px;
+    color: #BDBDBD;
+    font-family: TT Hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+}
+
+.headline-title-span{
+    color: #333;
+    font-family:'TT Hoves Bold', sans-serif ;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.svg-arrow-button{
+    border: 1px solid #F2F2F2;
+    background: #FFF;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.svg-arrow-button:hover,
+.svg-arrow-button:focus{
+    border: 1px solid #F2F2F2;
+    background: #F9F9F9;
+}
+
+.svg-arrow-button:not(:last-child) {
+    margin-right: 23px;
+}
+
+.profect-section-container{
+    padding-bottom: 120px;
+}
+
+.pages-container{
+    display: flex;
 }
 
 .pages{
-margin-top: 90px;
+    display: flex;
+    margin-top: 90px;
+    color:#BDBDBD;
+    font-family: TT Hoves;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
+
+.pages:not(:last-child) {
+    margin-right: 26px;
+}
+
+.headline-button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    background-color: #FFF ;
+    font-family: 'TT Hoves';
+    color:  #333;
+    font-family: TT Hoves;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    padding: 24px 50px;
+    border: none;
+    
+    min-width: 222px;
+    height: 71px;
+    text-align: center;
+    position: absolute;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.headline-button:hover,
+.headline-button:focus{
+    border: 1px solid #F2F2F2;
+    background: #F9F9F9;
+}
+
+.headline-button-svg{
+    display: flex;
+    margin-left: 12px;
+}
+
 
 .img-headline{
     position: relative;
 }
+
+.company-section-container{
+    padding-bottom: 120px;
+}
+
+.company-section{
+    width: 1170px;
+    height: 435px;
+    background: #FBFBFB;
+    display: flex;
+}
+
+.company-title{
+    color: #BDBDBD;
+    font-family: TT Hoves;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+}
+
+.company-text{
+    width: 400px;
+    height: 200px;
+    color: #000;
+    font-family: TT Hoves;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.component-text{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.container-img{
+    display: flex;
+}
+
+.tasks-section{
+display: flex;
+}
+
+.tasks-title{
+    margin-bottom: 60px;
+}
+
+.tasks-one{
+    display: flex;
+    width: 104px;
+    height: 140px;
+    margin-right: 30px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    color: #F2F2F2;
+    font-family: SF Pro Display;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.tasks-two{
+    display: flex;
+    width: 120px;
+    height: 140px;
+    margin-right: 30px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    color: #F2F2F2;
+    font-family: SF Pro Display;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.tasks-text{
+    color:  #333;
+    font-family: TT Hoves;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    width: 279px;
+    padding-right: 187px;
+}
+
+.tasks-text-two{
+    color:  #333;
+    font-family: TT Hoves;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    width: 420px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer{
     background-color: #2C2C2C;
