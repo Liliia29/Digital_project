@@ -330,27 +330,134 @@ display: flex;
     width: 420px;
 }
 
+.profect-section-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
+.profect-button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background:  #333;
+    width: 222px;
+    height: 71px;
 
+    color: #FFF;
+    font-family: TT Hoves;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12px; 
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    fill: #FFF;
+    margin-top: 30px;
+    margin-left: auto;
+}
 
+.profect-button:hover,
+.profect-button:focus{
+    border: 1px solid #F2F2F2;
+    background: #F2F2F2;
+    color: #333;
+    
+}
 
+.profect-button:hover .profect-button-svg,
+.profect-button:focus .profect-button-svg{
+    fill: #333;
+    
+}
+.profect-button-svg{
+    display: flex;
+    margin-left: 12px;
+    fill: #FFF;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ==============footer=============== */
 
 
 .footer{
     background-color: #2C2C2C;
+    padding: 60px 0 24px;
+}
+
+.footer-title{
+    color: #FFF;
+    font-family: TT Hoves;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.information-list{
+    color: #FFF;
+    font-family: TT Hoves;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: 0.42px;
+
+    display: flex;  
+    margin-bottom: 16px;
+}
+.information-list:focus,
+.information-list:hover{
+    color: #BDBDBD;
+}
+
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-svg{
+    margin-right: 14px;
+    margin-top: 3px;
+    fill: #FFF;
+    
+}
+
+.information-list:focus .footer-svg,
+.information-list:hover .footer-svg{
+    fill: #BDBDBD;
+}
+
+.social-networks{
+    display: flex;
+    gap: 40px;
+    fill: #FFF;
+}
+
+.social-networks:focus,
+.social-networks:hover{
+    fill: #BDBDBD;
+}
+
+.logo-footer{
+    fill: #FFF;
+}
+
+.footer-span{
+    color: rgba(200, 200, 200, 0.50);
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    margin: 24px auto 0;
+}
+
+.footer-border{
+    stroke-width: 1px;
+    stroke: #FFF;
+    opacity: 0.1;
 }
