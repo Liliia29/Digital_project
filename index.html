@@ -73,6 +73,70 @@
             <li><a href="#">КОНТАКТЫ</a></li>
           </ul>
         </nav>
+        <button
+            class="menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="30px"
+              height="30px"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+
+
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="modal-button-mobile js-close-menu" >
+              
+              <svg class="modal-icon" width="8px" height="8px">
+                <use href="./images/symbol-defs.svg#icon-vector"></use>
+              </svg>
+            </button>
+      
+            <ul >
+              <li class="site-nav-modal-menu"><a class="site-nav-modal" href="./index.html" class="webpage">ГЛАВНАЯ</a></li>
+              <li class="site-nav-modal-menu"><a class="site-nav-modal" href="#">ГАЛЕРЕЯ</a></li>
+              <li class="site-nav-modal-menu" ><a class="site-nav-modal" href="#">ПРОЕКТЫ</a></li>
+              <li class="site-nav-modal-menu"><a class="site-nav-modal" href="#">СЕРТИФИКАТЫ</a></li>
+              <li class="site-nav-modal-menu"><a class="site-nav-modal" href="#">КОНТАКТЫ</a></li>
+            </ul>
+
+            <ul class="icon-networks-mobile">
+              <li>
+                <a href="#" class="icon-mobile"
+                  ><svg width="19px" height="19px">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use></svg              ></a>
+              </li>
+              <li>
+                <a href="#" class="icon-mobile"
+                  ><svg width="22px" height="17px">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use></svg              ></a>
+              </li>
+              <li>
+                <a href="#" class="icon-mobile"
+                  ><svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg              ></a>
+              </li>
+              <li>
+                <a href="#" class="icon-mobile"
+                  ><svg width="19px" height="19px">
+                    <use
+                      href="./images/symbol-defs.svg#icon-pinterest"
+                    ></use></svg              ></a>
+              </li>
+            </ul>
+          </div>
+
+        
       </div>
     </header>
 
@@ -110,12 +174,12 @@
               width="770px"
               height="829px"
             />
-            <button class="headline-button btn">
+            <a href="#" class="headline-button btn">
               ВЗГЛЯНУТЬ
               <svg class="headline-button-svg" width="18px" height="8px">
                 <use href="./images/symbol-defs.svg#icon-ico-shape"></use>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -153,12 +217,12 @@
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <button class="headline-button">
+            <a href="#" class="headline-button">
               ЧИТАТЬ
               <svg class="headline-button-svg" width="18px" height="8px">
                 <use href="./images/symbol-defs.svg#icon-ico-shape"></use>
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -230,12 +294,12 @@
             />
           </div>
 
-          <button class="profect-button">
+          <a href="#" class="profect-button">
             ВСЕ ПРОЕКТЫ
             <svg class="profect-button-svg" width="18px" height="8px">
               <use href="./images/symbol-defs.svg#icon-ico-shape"></use>
             </svg>
-          </button>
+          </a>
         </div>
       </section>
 
@@ -288,7 +352,7 @@
                   class="profect-button-communication profect-button"
                   type="submit"
                 >
-                  ВОТПРАВИТЬ
+                  ОТПРАВИТЬ
                   <svg class="profect-button-svg" width="18px" height="8px">
                     <use href="./images/symbol-defs.svg#icon-ico-shape"></use>
                   </svg>
@@ -361,28 +425,24 @@
             <li>
               <a href="#" class="social-networks"
                 ><svg width="19px" height="19px">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg              ></a>
             </li>
             <li>
               <a href="#" class="social-networks"
                 ><svg width="22px" height="17px">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg              ></a>
             </li>
             <li>
               <a href="#" class="social-networks"
                 ><svg width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
-              ></a>
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg              ></a>
             </li>
             <li>
               <a href="#" class="social-networks"
                 ><svg width="19px" height="19px">
                   <use
                     href="./images/symbol-defs.svg#icon-pinterest"
-                  ></use></svg
-              ></a>
+                  ></use></svg              ></a>
             </li>
           </ul>
         </div>
@@ -407,5 +467,12 @@
         >
       </div>
     </footer>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
