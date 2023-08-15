@@ -78,6 +78,23 @@ img {
     margin-left: auto; 
 }
 
+@media screen and (min-width: 413px) and (max-width: 767px){
+    .container {
+    max-width: 428px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .container {
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 .logo-nav{
     display: flex;
     align-items: center;
@@ -280,8 +297,9 @@ img {
     padding-bottom: 120px;
 }
 
+
 .company-section{
-    width: 1170px;
+    max-width: 1170px;
     height: 435px;
     background: #FBFBFB;
     display: flex;
@@ -312,6 +330,22 @@ img {
     margin-top: 30px;
 }
 
+@media screen and (min-width: 413px) and (max-width: 767px){
+    .component-text{
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .component-text{
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
 .container-img{
     display: flex;
     gap: 30px;
@@ -319,6 +353,18 @@ img {
     margin-top: 30px;
     margin-left: 100px;
     position: relative;
+}
+
+@media screen and (min-width: 413px) and (max-width: 767px){
+    .container-img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .container-img {
+       display: none; 
+    }
 }
 
 .company-section-img{
@@ -329,6 +375,18 @@ img {
 
 .tasks-section{
 display: flex;
+}
+
+@media screen and (min-width: 413px) and (max-width: 767px){
+    .tasks-section{
+        display: block;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .tasks-section{
+        display: block;
+        }
 }
 
 .tasks-title{
@@ -369,6 +427,51 @@ display: flex;
     line-height: normal;
 }
 
+@media screen and (min-width: 413px) and (max-width: 767px){
+    .tasks-one{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        }
+    .tasks-two{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .tasks-text-two{
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .tasks-title{
+        margin-left: auto;
+        margin-right: auto;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .tasks-one{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        }
+    .tasks-two{
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .tasks-text-two{
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .tasks-title{
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+}
+
 .tasks-text{
     color:  #333;
     font-family: TT Hoves;
@@ -378,6 +481,23 @@ display: flex;
     line-height: 36px;
     width: 279px;
     padding-right: 187px;
+}
+
+@media screen and (min-width: 413px) and (max-width: 767px){
+    .tasks-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .tasks-text{
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+        }
+  
 }
 
 .tasks-text-two{
@@ -569,6 +689,18 @@ display: flex;
     margin-left: 30px;
 }
 
+@media screen and (min-width: 413px) and (max-width: 767px){
+    .communication-img{
+        display: none;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .communication-img{
+        display: none;
+        }
+}
+
 .profect-button-communication{
     margin-left: 0;
 
@@ -614,6 +746,14 @@ display: flex;
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (min-width: 413px) and (max-width: 767px){
+    .footer-section{
+        display: block;
+        
+    }
+}
+
 
 .footer-svg{
     margin-right: 14px;
